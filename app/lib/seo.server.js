@@ -34,8 +34,8 @@ function root({shop, url}) {
 function home() {
   return {
     title: 'Home',
-    titleTemplate: '%s | Hydrogen Demo Store',
-    description: 'The best place to buy snowboarding products',
+    titleTemplate: '%s | Hueyi donde compra todo México',
+    description: 'Donde compra todo México',
     robots: {
       noIndex: false,
       noFollow: false,
@@ -64,7 +64,7 @@ function productJsonLd({product, selectedVariant, url}) {
       : 'https://schema.org/OutOfStock';
 
     return {
-      '@type': 'Offer',
+      '@type': 'Oferta',
       availability,
       price: parseFloat(variant.price.amount),
       priceCurrency: variant.price.currencyCode,
@@ -80,7 +80,7 @@ function productJsonLd({product, selectedVariant, url}) {
         {
           '@type': 'ListItem',
           position: 1,
-          name: 'Products',
+          name: 'Productos',
           item: `${origin}/products`,
         },
         {
@@ -94,7 +94,7 @@ function productJsonLd({product, selectedVariant, url}) {
       '@context': 'https://schema.org',
       '@type': 'Product',
       brand: {
-        '@type': 'Brand',
+        '@type': 'Marca',
         name: product.vendor,
       },
       description,
@@ -137,7 +137,7 @@ function collectionJsonLd({url, collection}) {
         {
           '@type': 'ListItem',
           position: 1,
-          name: 'Collections',
+          name: 'Colecciones',
           item: `${siteUrl.host}/collections`,
         },
         {
@@ -194,8 +194,8 @@ function collectionsJsonLd({url, collections}) {
   return {
     '@context': 'https://schema.org',
     '@type': 'CollectionPage',
-    name: 'Collections',
-    description: 'All collections',
+    name: 'Colecciones',
+    description: 'Todas las colecciones',
     url,
     mainEntity: {
       '@type': 'ItemList',

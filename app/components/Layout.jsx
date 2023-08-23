@@ -150,7 +150,7 @@ function MobileHeader({title, isHome, openCart, openMenu}) {
       role="banner"
       className={`${
         isHome
-          ? 'bg-primary/80 dark:bg-contrast/60 text-contrast dark:text-primary shadow-darkHeader'
+          ? 'bg-primary/80 dark:bg-contrast/60 text-contrast dark:text-primary shadow-darktHeader'
           : 'bg-contrast/80 text-primary'
       } flex lg:hidden items-center h-nav sticky backdrop-blur-lg z-40 top-0 justify-between w-full leading-none gap-4 px-4 md:px-8`}
     >
@@ -255,7 +255,7 @@ function DesktopHeader({isHome, menu, openCart, title}) {
             }
             type="search"
             variant="minisearch"
-            placeholder="Search"
+            placeholder="Buscar"
             name="q"
           />
           <button
@@ -363,7 +363,7 @@ function Footer({menu}) {
       <div
         className={`self-end pt-8 opacity-50 md:col-span-2 lg:col-span-${itemsCount}`}
       >
-        &copy; {new Date().getFullYear()} / Shopify, Inc. Hydrogen is an MIT
+        &copy; {new Date().getFullYear()} / Hueyi Technologies, Inc. Hydrogen is an MIT
         Licensed Open Source project.
       </div>
     </Section>

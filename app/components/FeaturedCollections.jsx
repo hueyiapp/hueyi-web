@@ -3,7 +3,7 @@ import {Heading, Section, Grid, Link} from '~/components';
 
 export function FeaturedCollections({
   collections,
-  title = 'Collections',
+  title = 'Colecciones',
   ...props
 }) {
   const haveCollections = collections?.nodes?.length > 0;

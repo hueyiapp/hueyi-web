@@ -36,13 +36,13 @@ export function OrderCard({order}) {
               : lineItems[0].title}
           </Heading>
           <dl className="grid grid-gap-1">
-            <dt className="sr-only">Order ID</dt>
+            <dt className="sr-only">Orden ID</dt>
             <dd>
               <Text size="fine" color="subtle">
-                Order No. {order.orderNumber}
+                Orden No. {order.orderNumber}
               </Text>
             </dd>
-            <dt className="sr-only">Order Date</dt>
+            <dt className="sr-only">Orden Fecha</dt>
             <dd>
               <Text size="fine" color="subtle">
                 {new Date(order.processedAt).toDateString()}
@@ -72,7 +72,7 @@ export function OrderCard({order}) {
           prefetch="intent"
         >
           <Text color="subtle" className="ml-3">
-            View Details
+            Ver Detalles
           </Text>
         </Link>
       </div>

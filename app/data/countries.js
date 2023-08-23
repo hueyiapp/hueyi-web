@@ -1,5 +1,11 @@
 export const countries = {
   default: {
+    label: 'México (MXN $)',
+    language: 'ES',
+    country: 'MX',
+    currency: 'MXN',
+  },
+  '/en-us': {
     label: 'United States (USD $)',
     language: 'EN',
     country: 'US',

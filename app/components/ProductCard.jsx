@@ -25,9 +25,9 @@ export function ProductCard({
   if (label) {
     cardLabel = label;
   } else if (isDiscounted(price, compareAtPrice)) {
-    cardLabel = 'Sale';
+    cardLabel = 'Venta';
   } else if (isNewArrival(product.publishedAt)) {
-    cardLabel = 'New';
+    cardLabel = 'Nuevo';
   }
 
   const productAnalytics = {
@@ -104,14 +104,14 @@ export function ProductCard({
           }}
         >
           <Text as="span" className="flex items-center justify-center gap-2">
-            Add to Cart
+          Añadir al Carrito
           </Text>
         </AddToCartButton>
       )}
       {quickAdd && !firstVariant.availableForSale && (
         <Button variant="secondary" className="mt-2" disabled>
           <Text as="span" className="flex items-center justify-center gap-2">
-            Sold out
+            Agotado
           </Text>
         </Button>
       )}
