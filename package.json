@@ -17,6 +17,10 @@
   "prettier": "@shopify/prettier-config",
   "dependencies": {
     "@headlessui/react": "^1.7.2",
+    "@plasmicapp/cli": "^0.1.307",
+    "@plasmicapp/react-web": "^0.2.248",
+    "@plasmicpkgs/commerce": "^0.0.156",
+    "@plasmicpkgs/commerce-shopify": "^0.0.161",
     "@remix-run/react": "1.19.1",
     "@shopify/cli": "3.48.0",
     "@shopify/cli-hydrogen": "^5.1.2",
